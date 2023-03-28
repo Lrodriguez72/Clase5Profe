@@ -1,0 +1,15 @@
+<p>VALOR DEL HIJO: {{ visible }}</p>
+
+<div *ngIf="visible" class="overlay-wrapper">
+  <div class="card w-50">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">
+      </p>
+      <div class="d-flex justify-content-end">
+        <button (click)="onClose()" class="btn btn-danger me-2">No</button>
+        <button (click)="onClose()" class="btn btn-primary">Sí</button>
+      </div>
+    </div>
+  </div>
+</div>

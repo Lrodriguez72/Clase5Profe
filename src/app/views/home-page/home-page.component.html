@@ -1,3 +1,17 @@
-<app-selectable-list (select)="onSelect($event, 'personajes')" [items]="personajes" ></app-selectable-list>
+<!-- <app-selectable-list #myListOfPersonajes (select)="onSelect($event, 'personajes')" [items]="personajes" ></app-selectable-list>
 
-<app-selectable-list [items]="frutas" ></app-selectable-list>
+<app-selectable-list #myListOfFrutas [items]="frutas" ></app-selectable-list> -->
+
+<button (click)="modalVisible = !modalVisible" class="btn btn-primary" type="button">Abrir Modal</button>
+
+<app-modal [(visible)]="modalVisible"></app-modal>
+
+<p>
+  VALOR DEL PADRE
+  {{ modalVisible }}
+</p>
+
+<!--
+<div #myDiv>
+  Hola mundo
+</div> -->
